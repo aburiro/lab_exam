@@ -1,0 +1,90 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header with a black background and white text */
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Style the logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Style the navigation menu */
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Style the login button */
+.login-button a {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav {
+        margin-top: 10px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+    }
+}
+
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* Adjust as needed */
+    padding: 20px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Center the text and style the footer */
+.footer {
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Style the text within the footer */
+.footer h1 {
+    color: aliceblue;
+    margin: 0; /* Remove default margin to ensure it's centered vertically */
+}
